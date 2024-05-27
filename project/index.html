@@ -22,6 +22,11 @@
     		<li><button id="header_button">Join now</button></li>
 			</ul>
 			</nav>
+		<div class="burger-menu" id="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
     	</div>
     </header>
 
@@ -193,6 +198,19 @@
 			</div>
 	</div>
 </footer>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const headerList = document.querySelector('.header_list');
+
+            burgerMenu.addEventListener('click', function() {
+                headerList.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
 
 
 
